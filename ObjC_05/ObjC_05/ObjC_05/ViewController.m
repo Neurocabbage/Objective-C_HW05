@@ -29,15 +29,7 @@
     [self searchBarSearchButtonClicked];
 
 }
-/*
-- (IBAction)searchButtonTapped:(id)sender {
-    NSString *query = @"hello"; // Здесь можно захардкодить поисковой запрос
-    [Yandex searchWithQuery:query completion:^(NSString *result) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            self.textView.text = result;
-        });
-    }];
-}*/
+
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     NSString *query = searchBar.text;
